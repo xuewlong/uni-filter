@@ -1,6 +1,6 @@
 package uni_filter
 
-import "fmt"
+import "github.com/spf13/cast"
 
 func Contains(arr []string, t string) bool {
 	for _, item := range arr {
@@ -30,7 +30,7 @@ func Any(flags []bool) bool {
 }
 
 func convert2string(v any) string {
-	return fmt.Sprintf("%v", v)
+	return cast.ToString(v)
 }
 
 var _ = All(nil)

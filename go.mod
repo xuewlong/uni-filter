@@ -1,4 +1,4 @@
-module github.com/Ivlyth/uni-filter
+module github.com/xuewlong/uni-filter
 
 go 1.18
 
